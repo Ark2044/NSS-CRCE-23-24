@@ -1,37 +1,39 @@
-# NSS CRCE WEBSITE
+# NSS CRCE 2023-2024 Website
+This is the official website for the National Service Scheme (NSS) at Fr. Conceicao Rodrigues College of Engineering for the academic year 2023-2024. The site allows volunteers to track their hours and stay updated on the latest events and announcements.
+
+## Features
+### 1. Volunteer Hour Tracking
+- Allows volunteers to track the hours they spend on NSS activities.
+
+### 2. Events Conducted
+- A section showcasing past events organized by NSS.
+- Details include the date, location, and a brief description of each event.
+
+### 3. Event Reports and Reach
+- Provides detailed reports on the outcomes of events.
+- Metrics include participant numbers and the impact or reach of the event in the community.
+
+### 4. Collaboration Form
+- A form enabling volunteers or external parties to propose collaborations.
+- Allows suggestions for new initiatives for NSS activities.
 
 ## Technologies Used
 - Next.js
 - MongoDB
 - Node.js
-
-## Getting Started
-
-To clone and run this application, you'll need [Git](https://git-scm.com/download/win) and [MongoDB](https://www.mongodb.com/try/download/community) installed on your computer.
-
-### Setup Instructions
-
-1. Clone the repository: `git clone <repository-url>`
-2. Navigate to the project directory: `cd WEBSITE_NEXT`
-3. Install dependencies: `npm install`
-
-### How to Run Locally
-
-Run the project locally using the following command: `npm run dev`
-
-## Work to be Done on the Website
-
-### 1. Events
-- Update event details for each month in the respective files.
-- Update name, date, image source, Instagram link, and report link.
-
-### 2. Teams
-- Update details for Program Officer and council members in respective files.
-  - For Program Officers: update name, designation, and image source.
-  - For Council Members: update name, designation, image source, LinkedIn link, and Instagram link.
-
-### 3. Flagship Events
-- Update title and image URL in the Flagship events carousel.
+- Material UI
 
 ## Deployment
-The project is deployed on Vercel and can be accessed [here](https://www.nsscrce.org).
+The project is deployed on Vercel and can be accessed [here](https://nss-crce-23-24.vercel.app/).
+
+## Contact
+
+**Aarush Wasnik**
+
+- LinkedIn: [Aarush Wasnik](https://www.linkedin.com/in/aarush-wasnik-016120248/)
+- GitHub: [Ark2044](https://github.com/Ark2044)
+
+**Shreya Ghorpade**
+
+- LinkedIn: [Shreya Ghorpade](https://www.linkedin.com/in/shreya-g-a697b8272)
+- GitHub: [shreya64684](https://github.com/shreya64684)
