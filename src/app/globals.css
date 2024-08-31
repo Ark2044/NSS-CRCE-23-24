@@ -1,0 +1,589 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,100&display=swap");
+
+:root {
+  /* --blue: rgb(81, 59, 171); */
+  --black: black;
+  --light-color: #666;
+  --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0.1);
+  --border: 2rem solid rgba(0, 0, 0.1);
+  --outline: 0.1rem solid rgba(0, 0, 0.1);
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+
+body {
+  /* border: 2px solid black; */
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+  height: 100%;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+    Arial, sans-serif;
+  background-color: white;
+  text-align: center;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  margin-top: 100px;
+}
+
+.active {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  /* Add any other styles you want for the active state */
+}
+
+/*Home page*/
+.banner-gif img {
+  border-radius: 15px;
+  margin-top: 10px;
+  z-index: -1;
+}
+
+.Home h1 {
+  text-align: center;
+  color: blue;
+  font-family: "Allerta", sans-serif;
+  font-size: 35px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.Home p {
+  text-align: justify;
+  color: #201c1b;
+
+  padding: 0 50px 0 50px;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.about-us {
+  margin-top: 40px;
+}
+
+.prin {
+  margin-top: 40px;
+}
+
+.prin h2 {
+  color: blue;
+  font-family: "Allerta", sans-serif;
+  text-align: right;
+  font-weight: normal;
+  margin-right: 60px;
+  margin-top: 20px;
+}
+
+.prin .prin-img-p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.prin .prin-img-p .card {
+  width: max-content;
+
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+@media (max-width: 1000px) {
+  .prin .prin-img-p .card img {
+    width: 100%;
+    /* object-fit: cover; */
+  }
+
+  .prin .prin-img-p .card {
+    width: 90%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .prin .prin-img-p {
+    display: block;
+    align-items: center;
+  }
+}
+
+.flagship-text h1 {
+  /* font-family: 'Brush Script MT', cursive; */
+  /* font-family: 'Patua One'; */
+  font-family: "Poppins";
+  font-size: 60px;
+  margin-top: 30px;
+  color: rgb(53, 53, 224);
+}
+@media (max-width: 600px) {
+  .flagship-text h1 {
+    font-size: 45px;
+  }
+}
+
+/*Volunteer data*/
+.form {
+  padding: 10px;
+}
+
+#srno {
+  text-align: center;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input[type="text"] {
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+#btn {
+  /* background-color: lightblue;
+    border: none;
+    border-radius: 15px;
+    color: blue;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    font-size: 15px;
+    margin-bottom: 5px; */
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 720px) {
+  input[type="text"] {
+    width: 25%;
+  }
+}
+
+#title2 {
+  display: center;
+  text-align: center;
+  font-family: monospace;
+  font-size: 40px;
+  color: dodgerblue;
+}
+
+.event-category {
+  padding-top: 30px;
+  color: blue;
+}
+
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  /* box-shadow: var(--box-shadow); */
+  box-shadow: 5px 10px 5px #888888;
+  padding-bottom: 50px;
+}
+
+td,
+th {
+  border: 1px solid black;
+  padding: 8px;
+  width: 25%;
+  /* Set the width for each column */
+}
+
+th {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: lightblue;
+  color: blue;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+#ev {
+  display: center;
+  text-align: center;
+  font-family: monospace;
+  font-size: 40px;
+  color: dodgerblue;
+}
+
+.footer {
+  width: fit-content;
+  background: #1976d2;
+  margin-top: 50px;
+}
+
+.footer .box-container {
+  /* border: 1px solid black; */
+  background-color: lightblue;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+  gap: 1.5rem;
+  padding-top: 20px;
+}
+
+.frLogo {
+  margin-top: 30px;
+}
+
+.footer .box-container .box h3 {
+  font-size: 1.5rem;
+  color: blue;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  justify-content: left;
+}
+
+.footer .box-container .box h3 i {
+  color: blue;
+}
+
+.footer .box-container .box .links {
+  display: block;
+  font-size: 1rem;
+  color: var(--black);
+  padding: 1rem 0;
+  text-align: left;
+  margin-left: 90px;
+}
+
+.footer .box-container .box .links i {
+  color: blue;
+  padding-right: 0.5rem;
+}
+
+.footer .box-container .box .lower {
+  text-transform: lowercase;
+}
+
+#contact {
+  /* border: 1px solid black; */
+  margin-right: 20px;
+}
+
+.footer .box-container .box .links:hover i {
+  padding-right: 2rem;
+}
+
+.footer .box-container .box p {
+  line-height: 2;
+  font-size: 1.2rem;
+  color: var(--light-color);
+  padding: 1rem 0;
+  margin-top: 20px;
+}
+
+/* .footer .box-container .box  */
+.share a {
+  border: 0px solid;
+  height: 3rem;
+  width: 4rem;
+  line-height: 3rem;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  text-align: center;
+  color: blue;
+  margin-left: 0.2rem;
+  background: #eee;
+  font-style: normal;
+}
+
+@media (max-width: 380px) {
+  .share a {
+    width: 3.5rem;
+  }
+}
+
+/* .footer .box-container .box */
+.share a:hover {
+  background: blue;
+  color: white;
+}
+
+.inline {
+  display: inline-flex;
+  /* margin-right: auto; */
+}
+
+.nssLogo {
+  margin-right: 90px;
+}
+
+.inline .nss-logo {
+  /* border: 1px solid black; */
+  width: 50px;
+  height: 50px;
+  /* Add some space to the left (adjust the value as needed) */
+  transform: scale(2);
+  /* Adjust the scale factor as needed for the desired zoom level */
+  transition: transform 0.2s;
+  /* Add a smooth transition effect */
+  /* margin-right: 20px; */
+  /* padding-left: 60px; */
+}
+
+.inline .nss-logo-h3 {
+  margin: 0;
+  font-size: large;
+  line-height: 0.9;
+  text-align: left;
+  margin-right: 20px;
+  margin-left: 70px;
+}
+
+.inline .father-logo {
+  /* border: 1px solid black; */
+  width: 50px;
+  height: 50px;
+  /* Add some space to the left (adjust the value as needed) */
+  transform: scale(2.5);
+  /* Adjust the scale factor as needed for the desired zoom level */
+  transition: transform 0.2s;
+  /* Add a smooth transition effect */
+  line-height: 20px;
+  margin-left: 20px;
+}
+
+.inline .crce-logo {
+  /* border: 1px solid black; */
+  width: 50px;
+  height: 50px;
+  /* Add some space to the left (adjust the value as needed) */
+  transform: scale(3);
+  /* Adjust the scale factor as needed for the desired zoom level */
+  transition: transform 0.2s;
+  /* Add a smooth transition effect */
+  margin-left: 50px;
+}
+
+.inline .crce-logo-h3 {
+  margin: 0;
+  font-size: large;
+  line-height: 0.9;
+  text-align: left;
+  margin-left: 70px;
+}
+
+.footer-end {
+  padding-top: 20vh;
+  background-color: lightblue;
+  width: 100%;
+}
+
+/* Style for the names of the designers */
+.designers h5 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  /* Adjust the font size as needed */
+  color: #007bff;
+  /* Text color */
+  font-weight: bolder;
+  /* Make the text bold */
+}
+
+/* Style for the copyright notice */
+.copyright-and-designers {
+  padding: 10px;
+  background-color: rgb(53, 190, 235);
+  justify-content: center;
+}
+
+.copyright {
+  font-size: 20px;
+  /* Adjust the font size as needed */
+  color: white;
+  /* Text color */
+  margin-top: 20px;
+  /* Add some space above the copyright notice */
+  font-weight: bold;
+}
+
+.designers,
+.nss {
+  font-size: 20px;
+  /* Adjust the font size as needed */
+  color: white;
+  /* Text color */
+  margin-top: 20px;
+  /* Add some space above the copyright notice */
+  font-weight: bolder;
+}
+
+.nss:hover,
+.designers:hover {
+  color: rgb(53, 53, 224);
+}
+
+#last-updated {
+  margin-top: 20px;
+}
+
+@media only screen and (min-width: 590px) and (max-width: 720px) {
+  .inline .nss-logo {
+    margin-left: 60px;
+  }
+
+  .inline .nss-logo-h3 {
+    margin-left: 20px;
+    padding-left: 50px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 590px) {
+  .box-container {
+    width: fit-content;
+  }
+
+  .inline .nss-logo {
+    margin-left: 60px;
+  }
+
+  .inline .nss-logo-h3 {
+    font-size: 1rem;
+    margin-left: 50px;
+    padding-left: 50px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 420px) {
+  .footer-end {
+    width: 415px;
+  }
+}
+
+/*Carousel CSS*/
+
+/* Add this CSS to your stylesheet */
+.scroll-to-top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.CardSwiper {
+  width: 100% !important;
+  padding-top: 50px;
+  padding-bottom: 50px !important;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px !important;
+  height: 300px !important;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.para {
+  margin: 40px !important;
+  font-weight: bolder;
+}
+
+.flippy-front {
+  box-shadow: none !important;
+}
+.flippy-back {
+  box-shadow: none !important;
+}
+
+.main-carousel {
+  @media (max-width: 950px) {
+    width: 80% !important;
+  }
+}
+
+.aboutus {
+  width: 100%;
+  margin-block: 3rem;
+  /* border: 2px solid red; */
+}
+
+.aboutus_box {
+  width: 80%;
+  margin: 0 auto;
+  /* background-color: #5271FF; */
+  /* box-shadow: 15px 15px 10px grey; */
+  border-radius: 30px;
+  /* border: 3px solid black; */
+}
+
+.aboutus_box_hero {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  align-items: center;
+  gap: 3rem;
+  /* border: 4px solid green; */
+}
+.aboutus_box_hero_left {
+  /* border: 3px solid black; */
+  animation: slideInLeft;
+  animation-duration: 4s;
+}
+
+.aboutus_box_hero_right {
+  /* border: 4px solid green; */
+  animation: slideInRight;
+  animation-duration: 4s;
+}
+.aboutus_box_hero_right p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  text-align: justify;
+  margin: 30px;
+  color: black;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 35em) {
+  .aboutus_box {
+    width: 90%;
+    border-radius: 20px;
+  }
+  .aboutus_box_hero {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .aboutus_box_hero_right p {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 445px) and (max-width: 768px) {
+  .aboutus_box {
+    width: 90%;
+  }
+  .aboutus_box_hero {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+

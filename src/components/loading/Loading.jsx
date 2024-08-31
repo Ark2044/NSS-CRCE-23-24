@@ -1,0 +1,14 @@
+// Loading.jsx
+import React from 'react';
+import CircularProgress from '@mui/material/CircularProgress';
+
+const Loading = () => {
+  return (
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+      <CircularProgress />
+      {/* <video src='/images/logos/intro.mov' ></video> */}
+    </div>
+  );
+};
+
+export default Loading;
