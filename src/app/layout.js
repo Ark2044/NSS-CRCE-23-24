@@ -9,9 +9,10 @@ import Footer from "@/components/footer/Footer";
 import "@fortawesome/fontawesome-free/css/all.css";
 import ScrollToTopButton from "@/components/scrolltotopbutton/ScrollToTopButton";
 import IntroAnimation from "@/components/introanimation/introanimation";
+
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "NSS CRCE",
   description:
     "The official website of the National Service Scheme (NSS) at Fr. Conceicao Rodrigues College of Engineering. Explore our volunteer opportunities, view upcoming and past events, track volunteer hours, and learn more about our impact in the community.",
