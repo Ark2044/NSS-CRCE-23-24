@@ -15,6 +15,7 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import { MDBIcon, MDBBtn } from "mdb-react-ui-kit";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 
 function LastUpdated() {
   const [lastUpdated, setLastUpdated] = useState(null);
@@ -59,13 +60,13 @@ function Footer() {
               justifyContent="center"
             >
               <Box>
-                <img
+                <Image
                   className="nss-logo"
                   alt="NSS Logo"
                   src="/images/logos/nss-logo.svg"
+                  width={60}
+                  height={60}
                   style={{
-                    width: "50px",
-                    height: "50px",
                     transform: "scale(2)",
                     transition: "transform 0.2s",
                   }}
@@ -110,8 +111,8 @@ function Footer() {
               </ListItemIcon>
               <ListItemText
                 style={{ color: "white" }}
-                primary="+91 99204 14062"
-                secondary="Ratan Singh (President)"
+                primary="+91 90292 97136"
+                secondary="Prof. Pradeep Singh (Program Officer)"
                 secondaryTypographyProps={{ color: "white", fontSize: "15px" }}
               />
             </ListItem>
@@ -122,21 +123,9 @@ function Footer() {
               <ListItemText
                 style={{ color: "white" }}
                 primary="+91 93266 65726"
-                secondary="Krishna Soni (Vice President)"
+                secondary="Prof. Gajendra Singh (Program Officer)"
                 secondaryTypographyProps={{ color: "white", fontSize: "15px" }}
               ></ListItemText>
-            </ListItem>
-            <ListItem>
-              <ListItemIcon>
-                <PhoneIcon />
-              </ListItemIcon>
-              <ListItemText
-                style={{ color: "white" }}
-                classname="link"
-                primary="+91 99693 54409"
-                secondary="Aarush Wasnik (Senior Web-Master)"
-                secondaryTypographyProps={{ color: "white", fontSize: "15px" }}
-              />
             </ListItem>
             <ListItem component="a" href="mailto:crce.nss@gmail.com">
               <ListItemIcon>
@@ -292,14 +281,9 @@ function Footer() {
               sx={{ bgcolor: "#00008B", paddingTop: "10px" }}
               color="white"
             >
-              <Link
-                href={"/teams/web_card_list"}
-                className="designers"
-                color="white"
-              >
                 {" "}
                 NSS-CRCE WEB TEAM
-              </Link>
+              
             </Typography>
           </Stack>
         </Grid>
